@@ -4,7 +4,7 @@
 
 Hello,
 
-this is part of your interview with 7TV that aims to test your ability to write services that efficiently solve problems we have in our business.
+this is part of your interview with Convosight that aims to test your ability to write services that efficiently solve problems.
 
 Please read this document carefully before starting, as it outlines your task, the constraints and by what criteria you will be evaluated.
 
@@ -53,17 +53,17 @@ We want to be able to search movies in our catalogue. To that end, we implement 
 
 ## Constraints
 
-- Use Python (minimum 3.5)
-- Do not introduce any system dependencies (databases, caches, search engines, docker, ..) to solve this task. This task is about your problem solving skills and not about creating a production ready system. It should not require more than `pip install` and `python <your_script>.py` to have a running service.
+- Use Python (minimum 3.5),java or nodejs
+- Do not introduce any system dependencies (databases, caches, search engines, docker, ..) to solve this task. This task is about your problem solving skills and not about creating a production ready system. It should not require more than installing the dependency (`pip install`) and  running the application (`python <your_script>.py`) to have a running service.
 - 72h after being added to the project, your pushing rights will be revoked and the latest commit of your implementation will be the basis for your evaluation.
-- Keep it simple: You are not expected to spend days on this - just proof that you know how to write great software in Python
+- Keep it simple: You are not expected to spend days on this - just proof that you know how to write great software
 
 ## Evaluation criteria
 
 In general you can think of the evaluation being a thorough peer review of your code. 
 You will be evaluated by a number of criteria, among others:
 
-- How well did you apply engineering best practices (general & Python specific)?
+- How well did you apply engineering best practices (general & language specific)?
 - Is the service working as intended?
 - How readable is your code?
 - Does the service solve the problem
