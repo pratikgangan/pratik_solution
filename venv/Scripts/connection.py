@@ -9,7 +9,7 @@ import json
 
 def movieMetadata(i):
     
-    f = open('C:/Users/Help/Source/Repos/pratik_solution2/movies/'+i) 
+    f = open('C:/Users/Help/Source/Repos/pratik_solution2/movies/'+i+'.json') 
 
 
 
@@ -27,11 +27,11 @@ def movieMetadata(i):
 
  
     #new json payload
-    ab={}
+    merged={}
     #transformations
-    ab['Plot']=df1['Plot']
-    ab['Title']=df1['Title']
-    ab['Runntime']=df2['duration']
+    merged['Plot']=df1['Plot']
+    merged['Title']=df1['Title']
+    merged['Runntime']=df2['duration']
     
 
     tempd={}
@@ -47,30 +47,30 @@ def movieMetadata(i):
       templ.append(tempd2)
       tempd2=tempd2.copy()
        
-    ab['Ratings']= df1['Ratings']+templ
+    merged['Ratings']= df1['Ratings']+templ
 
 
-    ab['Actors']=df1['Actors'].split(', ') 
-    ab['Director']=df1['Director'].split(', ') 
-    ab['Writer']=df1['Writer'].split(', ')
-    ab['Year']=df1['Year']
-    ab['Released']=df1['Released']
-    ab['Genre']=df1['Genre']
-    ab['Language']=df1['Language']
-    ab['Country']=df1['Country']
-    ab['Awards']=df1['Awards']
-    ab['Metascore']=df1['Metascore']
-    ab['imdbRating']=df1['imdbRating']
-    ab['imdbVotes']=df1['imdbVotes']
-    ab['imdbID']=df1['imdbID']
-    ab['Type']=df1['Type']
-    ab['DVD']=df1['DVD']
-    ab['BoxOffice']=df1['BoxOffice']
-    ab['Production']=df1['Production']
-    ab['Website']=df1['Website']
-    ab['Response']=df1['Response']
-    ab['id']=df2['id']
-    ab['languges']=df2['languages']
-    print(ab)   
-    return ab
+    merged['Actors']=df1['Actors'].split(', ') 
+    merged['Director']=df1['Director'].split(', ') 
+    merged['Writer']=df1['Writer'].split(', ')
+    merged['Year']=df1['Year']
+    merged['Released']=df1['Released']
+    merged['Genre']=df1['Genre']
+    merged['Language']=df1['Language']
+    merged['Country']=df1['Country']
+    merged['Awards']=df1['Awards']
+    merged['Metascore']=df1['Metascore']
+    merged['imdbRating']=df1['imdbRating']
+    merged['imdbVotes']=df1['imdbVotes']
+    merged['imdbID']=df1['imdbID']
+    merged['Type']=df1['Type']
+    merged['DVD']=df1['DVD']
+    merged['BoxOffice']=df1['BoxOffice']
+    merged['Production']=df1['Production']
+    merged['Website']=df1['Website']
+    merged['Response']=df1['Response']
+    merged['id']=df2['id']
+    merged['languges']=df2['languages']
+    print(merged)   
+    return merged
 

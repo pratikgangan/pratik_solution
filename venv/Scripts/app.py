@@ -10,8 +10,8 @@ def index():
   
 
 
-@app.route('/hello/movieMetadata/<string:name>')
-def hello(name):
-    ab=movieMetadata(name)
-    return ab
+@app.route('/api/movie/<string:name>', methods=['GET', 'POST']) 
+def api(name):
+    merged=movieMetadata(name)
+    return merged
 
